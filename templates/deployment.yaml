@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: suse-app
+spec:
+  selector:
+    matchLabels:
+      app: suse-app
+  template:
+    metadata:
+      labels:
+        app: suse-app
+    spec:
+      containers:
+      - name: web
+        image: nginx:alpine
+        command: ["/bin/sh", "-c"]
+        args: ["echo '<h1 style=\"color:{{ .Values.color }};\">SUSE</h1>' > /usr/share/nginx/html/index.html && nginx -g 'daemon off;'"]
