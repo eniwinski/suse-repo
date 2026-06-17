@@ -6,6 +6,6 @@ entries:
     digest: c6d6cfaa6667af2d696efa30791cdc6baf1e7937ccb7eda39a3d92c9a755e50c
     name: suse-app
     urls:
-    - suse-app-0.1.0.tgz
+    - https://raw.githubusercontent.com/eniwinski/suse-repo/refs/heads/main/suse-app-0.1.0.tgz
     version: 0.1.0
 generated: "2026-06-17T14:19:41.650117767+02:00"
